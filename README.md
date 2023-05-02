@@ -3,12 +3,8 @@ This repo contains my study notes, a practice task list I used for preparing for
 
 ## Layout
 The site is broken into three main areas:
-- Study Notes
 - Lab Setup
 - Exam Prep
-
-## Study Notes
-This is a collection of my notes that I took while preparing. It is fairly disorganized at the moment, but there is a lot of good material in there.
 
 ## Lab Setup
 This is a general layout of how to build the lab and prep the servers for attempting the tasks in the exam prep task list.
