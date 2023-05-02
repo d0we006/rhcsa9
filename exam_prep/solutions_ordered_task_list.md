@@ -19,9 +19,9 @@ systemd.unit=multi-user.target init=/bin/bash enforcing=0
 mount -o remount,rw /
 passwd root
 ### password twice
-### Ctrl-d create /.autorelabel file
+### Create /.autorelabel
 touch /.autorelabel
-### reboot the fancy method
+### Reboot
 exec /usr/lib/systemd/systemd
 
 
