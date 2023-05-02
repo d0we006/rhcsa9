@@ -12,15 +12,18 @@ This guide shows all of the steps I took for completing each task while preparin
 ### to select the rescue kernel, and then press `e` to enter edit mode.
 
 ### Append to the end of the line beginning with `linux`
-systemd.unit=multi-user.target rd.break enforcing=0
+systemd.unit=multi-user.target init=/bin/bash enforcing=0
 
 ### Ctrl-x to boot into rescue mode
 ### Enter
-mount -o rw,remount /sysroot
-chroot /sysroot
+mount -o remount,rw /
 passwd root
 ### password twice
-### Ctrl-d twice (just hold ctrl and tap d twice) to fully boot
+### Ctrl-d create /.autorelabel file
+touch /.autorelabel
+### reboot the fancy method
+exec /usr/lib/systemd/systemd
+
 
 ### Login
 restorecon /etc/shadow
