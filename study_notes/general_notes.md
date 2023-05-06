@@ -13,3 +13,10 @@
 <1>8. Make sure SELinux is working and configured as required.
 <1>9. Work on everything else.
 ```
+
+### reboot
+```
+- A successful reboot allows you to verify that everything is working up to the moment you have rebooted
+- Before rebooting, remove the rhgb and quiet option from the GRUB boot loader => allows you to see what is actually happening and makes troubleshooting a lot easy
+- Should at least reboot after working on all storage-related assignments 
+```
