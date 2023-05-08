@@ -27,10 +27,14 @@
 **<1>5**. Create users edwin and santos and make them members of the group livingopensource as a secondary group membership. Also, create users serene and alex and make them members of the group operations as a secondary group. Ensure that user santos has UID 1234 and cannot start an interactive shell.
 
 **<1>6**. Create shared group directories /groups/livingopensource and /groups/operations, and make sure the groups meet the following requirements:
-    **<2>1**. Members of the group livingopensource have full access to their directory.
-    **<2>2**. Members of the group operations have full access to their directory.
-    **<2>3**. New files that are created in the group directory are group owned by the group owner of the parent directory.
-    **<2>4**. Others have no access to the group directories.
+
+<2>1. Members of the group livingopensource have full access to their directory.
+
+<2>2. Members of the group operations have full access to their directory.
+
+<2>3. New files that are created in the group directory are group owned by the group owner of the parent directory.
+
+<2>4. Others have no access to the group directories.
 
 **<1>7**. Create a 2-GiB volume group with the name myvg, using 8-MiB physical extents. In this volume group, create a 500-MiB logical volume with the name mydata, and mount it persistently on the directory /mydata.
 
@@ -81,10 +85,14 @@
 **<1>5**. Create users laura and linda and make them members of the group livingopensource as a secondary group membership. Also, create users lisa and lori and make them members of the group operations as a secondary group.
 
 **<1>6**. Create shared group directories /groups/livingopensource and /groups/operations and make sure these groups meet the following requirements:
-    **<2>1**. Members of the group livingopensource have full access to their directory.
-    **<2>2**. Members of the group operations have full access to their directory.
-    **<2>3**. Users should be allowed to delete only their own files.
-    **<2>4**. Others should have no access to any of the directories.
+
+<2>1. Members of the group livingopensource have full access to their directory.
+
+<2>2. Members of the group operations have full access to their directory.
+
+<2>3. Users should be allowed to delete only their own files.
+
+<2>4. Others should have no access to any of the directories.
 
 **<1>7**. Create a 2-GiB swap partition and mount it persistently.
 
@@ -97,10 +105,14 @@
 **<1>11**. Install a web server and ensure that it is started automatically.
 
 **<1>12**. Configure a container that runs the docker.io/library/mysql:latest image and ensure it meets the following conditions
-    **<2>1**. It runs as a rootless container in the user linda account.
-    **<2>2**. It is configured to use the mysql root password password.
-    **<2>3**. It bind mounts the host directory /home/student/mysql to the container directory /var/lib/mysql.
-    **<2>4**. It automatically starts through a systemd job, where it is not needed for user linda to log in.
+
+<2>1. It runs as a rootless container in the user linda account.
+
+<2>2. It is configured to use the mysql root password password.
+
+<2>3. It bind mounts the host directory /home/student/mysql to the container directory /var/lib/mysql.
+
+<2>4. It automatically starts through a systemd job, where it is not needed for user linda to log in.
 
 --------------------
 
@@ -132,13 +144,18 @@
 **<1>5**. Create users linda and anna and make them members of the group sales as a secondary group membership. Also, create users serene and alex and make them members of the group account as a secondary group.
 
 **<1>6**. Configure an SSH server that meets the following requirements:
-    **<2>1**. User root is allowed to connect through SSH.
-    **<2>2**. The server offers services on port 2022.
+
+<2>1. User root is allowed to connect through SSH.
+
+<2>2. The server offers services on port 2022.
 
 **<1>7**. Create shared group directories /groups/sales and /groups/account, and make sure these groups meet the following requirements:
-    **<2>1**. Members of the group sales have full access to their directory.
-    **<2>2**. Members of the group account have full access to their directory.
-    **<2>3**. Users have permissions to delete only their own files, but Alex is the general manager, so user alex has access to delete all users’ files.
+
+<2>1. Members of the group sales have full access to their directory.
+
+<2>2. Members of the group account have full access to their directory.
+
+<2>3. Users have permissions to delete only their own files, but Alex is the general manager, so user alex has access to delete all users’ files.
 
 **<1>8**. Create a 4-GiB volume group, using a physical extent size of 2 MiB. In this volume group, create a 1-GiB logical volume with the name myfiles, format it with the Ext3 file system, and mount it persistently on /myfiles.
 
@@ -187,10 +204,14 @@
 **<1>5**. Create users lori and laura and make them members of the secondary group sales. Ensure that user lori uses UID 2000 and user laura uses UID 2001.
 
 **<1>6**. Create shared group directories /groups/sales and /groups/data, and make sure the groups meet the following requirements:
-    **<2>1**. Members of the group sales have full access to their directory.
-    **<2>2**. Members of the group data have full access to their directory.
-    **<2>3**. Others has no access to any of the directories.
-    **<2>4**. Alex is general manager, so user alex has read access to all files in both directories and has permissions to delete all files that are created in both directories.
+
+<2>1. Members of the group sales have full access to their directory.
+
+<2>2. Members of the group data have full access to their directory.
+
+<2>3. Others has no access to any of the directories.
+
+<2>4. Alex is general manager, so user alex has read access to all files in both directories and has permissions to delete all files that are created in both directories.
 
 **<1>7**. Create a 1-GiB swap partition and mount it persistently.
 
