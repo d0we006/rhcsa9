@@ -1,7 +1,7 @@
-## RHCSA 9 Practice Exams
+## Part V: RHCSA 9 Practice Exams
 ### RHCSA Practice Exam A
 
-General Notes
+#### General Notes
 - Here are some tips to ensure your exam starts with a clean environment:
 - You do not need external servers or resources.
 - Do not register or connect to external repositories.
@@ -15,7 +15,7 @@ General Notes
 - One additional 20-GB disk that does not have any partitions installed
 - Server with GUI installation pattern
 
-
+#### Tasks
 **<1>1**. Create user student with password password, and user root with password password.
 
 **<1>2**. Configure your system to automatically mount the ISO of the installation disk on the directory /repo. Configure your system to remove this loop-mounted ISO as the only repository that is used for installation. Do not register your system with subscription-manager, and remove all references to external repositories that may already exist.
@@ -55,7 +55,7 @@ General Notes
 --------------------
 ### RHCSA Practice Exam B
 
-General Notes
+#### General Notes
 - Here are some tips to ensure your exam starts with a clean environment:
 - You do not need external servers or resources.
 - Do not register or connect to external repositories.
@@ -69,7 +69,7 @@ General Notes
 - One additional 20-GB disk that does not have partitions installed
 - Server with GUI installation pattern
 
-
+#### Tasks
 **<1>1**. Create user student with password password, and user root with password password.
 
 **<1>2**. Configure your system to automatically mount the ISO of the installation disk on the directory /repo. Configure your system to remove this loop-mounted ISO as the only repository that is used for installation. Do not register your system with subscription-manager, and remove all references to external repositories that may already exist.
@@ -106,7 +106,7 @@ General Notes
 
 ### RHCSA Practice Exam C
 
-General Notes
+#### General Notes
 - Here are some tips to ensure your exam starts with a clean environment:
 - You do not need any external servers or resources.
 - Do not register or connect to any external repositories.
@@ -120,7 +120,7 @@ General Notes
 - One additional 20-GB disk that does not have any partitions installed
 - Server with GUI installation pattern
 
-
+#### Tasks
 **<1>1**. Create user student with password password, and user root with password password.
 
 **<1>2**. Configure your system to automatically mount the ISO of the installation disk on the directory /repo. Configure your system to remove this loop-mounted ISO as the only repository that is used for installation. Do not register your system with subscription-manager, and remove all references to external repositories that may already exist.
@@ -161,7 +161,7 @@ General Notes
 
 ### RHCSA Practice Exam D
 
-General Notes
+#### General Notes
 - Here are some tips to ensure your exam starts with a clean environment:
 - You do not need any external servers or resources.
 - Do not register or connect to any external repositories.
@@ -175,7 +175,7 @@ General Notes
 - One additional 20-GB disk that does not have any partitions installed
 - Server with GUI installation pattern
 
-
+#### Tasks
 **<1>1**. Create user student with password password, and user root with password password.
 
 **<1>2**. Configure your system to automatically mount the ISO of the installation disk on the directory /repo. Configure your system to remove this loop-mounted ISO as the only repository that is used for installation. Do not register your system with subscription-manager, and remove all references to external repositories that may already exist.
