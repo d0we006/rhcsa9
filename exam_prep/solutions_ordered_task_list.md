@@ -116,13 +116,13 @@ vi /etc/yum.repos.d/local.repo
 [BaseOS]
 name=BaseOS
 enabled=1
-baseurl=http://192.168.0.17/repo/BaseOS/
+baseurl=http://192.168.0.16/repo/BaseOS/
 gpgcheck=0
 
 [AppStream]
 name=AppStream
 enabled=1
-baseurl=http://192.168.0.17/repo/AppStream/
+baseurl=http://192.168.0.16/repo/AppStream/
 gpgcheck=0
 
 [F37]
@@ -142,7 +142,7 @@ gpgcheck=0
 scp /etc/yum.repos.d/local.repo root@192.168.0.19:/etc/yum.repos.d/
 ```
 
-**8.** Configure autofs to automatically mount individual users' home directories from `/export/home` on 192.168.0.17 to `/mnt/autofs_home/<user_name>`.
+**8.** Configure autofs to automatically mount individual users' home directories from `/export/home` on 192.168.0.16 to `/mnt/autofs_home/<user_name>`.
 
 
 #### **Solution to Task 8**
@@ -157,7 +157,7 @@ mkdir /mnt/autofs_home
 /mnt/autofs_home /etc/auto.home
 
 ### Create and add the following to /etc/auto.home:
-* 192.168.0.17:/export/home/&
+* 192.168.0.16:/export/home/&
 
 systemctl restart autofs
 ```
@@ -441,7 +441,7 @@ find /etc -type f -size +3M -exec cp {} /largefiles \; 2>/dev/null
 ls -al /largefiles/
 ```
 
-**22.** On both servers persistently mount `/export/dba_files` from the server 192.168.0.17 under `/mnt/dba_files`. Ensure manny is the user owner and dba_staff is the group owner. Ensure the groupID is applied to newly created files. Ensure users can only delete files they have created. Ensure only members of the dba_staff group can access the directory.
+**22.** On both servers persistently mount `/export/dba_files` from the server 192.168.0.16 under `/mnt/dba_files`. Ensure manny is the user owner and dba_staff is the group owner. Ensure the groupID is applied to newly created files. Ensure users can only delete files they have created. Ensure only members of the dba_staff group can access the directory.
 
 
 #### **Solution to Task 22**
@@ -451,7 +451,7 @@ mkdir /mnt/dba_files
 vi /etc/fstab
 
 ### Add the following line to /etc/fstab:
-192.168.0.17:/export/dba_files  /mnt/dba_files  nfs  defaults  0 0
+192.168.0.16:/export/dba_files  /mnt/dba_files  nfs  defaults  0 0
 
 ### Write and quit /etc/fstab, then check the mount:
 mount -a
@@ -462,7 +462,7 @@ chmod 770 /mnt/dba_files
 chmod g+s,+t /mnt/dba_files
 ```
 
-**23.** On both servers persistently mount `/export/it_files` from the server 192.168.0.17 under `/mnt/it_files`. Ensure marcia is the user owner and it_staff is the group owner. Ensure the groupID is applied to newly created files. Ensure users can only delete files they have created. Ensure only members of the it_staff group can access the directory.
+**23.** On both servers persistently mount `/export/it_files` from the server 192.168.0.16 under `/mnt/it_files`. Ensure marcia is the user owner and it_staff is the group owner. Ensure the groupID is applied to newly created files. Ensure users can only delete files they have created. Ensure only members of the it_staff group can access the directory.
 
 
 #### **Solution to Task 23**
@@ -472,7 +472,7 @@ mkdir /mnt/it_files
 vi /etc/fstab
 
 ### Add the following line to /etc/fstab:
-192.168.0.17:/export/it_files  /mnt/it_files  nfs  defaults  0 0
+192.168.0.16:/export/it_files  /mnt/it_files  nfs  defaults  0 0
 
 ### Write and quit /etc/fstab, then check the mount:
 mount -a
@@ -1131,7 +1131,7 @@ q
 pkill stress-ng
 ```
 
-**42.** On server1, as the user `cindy`, create a container image from [http://192.168.0.17/containers/Containerfile](http://192.168.0.17/containers/Containerfile) with the tag `web_image`.
+**42.** On server1, as the user `cindy`, create a container image from [http://192.168.0.16/containers/Containerfile](http://192.168.0.16/containers/Containerfile) with the tag `web_image`.
 
 
 #### **Solution to Task 42**
@@ -1145,7 +1145,7 @@ loginctl enable-linger cindy
 Login separately as cindy. It needs to be a fresh login, do not use `su -`. Then build the image:
 
 ```
-podman build -t web_image http://192.168.0.17/containers/Containerfile
+podman build -t web_image http://192.168.0.16/containers/Containerfile
 ```
 
 If we run a `podman images` now, we should see the newly created image:
