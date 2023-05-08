@@ -12,6 +12,7 @@
 <1>7. Set permissions.
 <1>8. Make sure SELinux is working and configured as required.
 <1>9. Work on everything else.
+
 ```
 
 ### reboot
