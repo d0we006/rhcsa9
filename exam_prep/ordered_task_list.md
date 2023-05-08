@@ -16,7 +16,7 @@ This task list is written so all dependencies are covered in order. There might 
 
 **7.** Secure copy the repo file to server2.
 
-**8.** Configure autofs to automatically mount individual users' home directories from `/export/home` on 192.168.0.17 to `/mnt/autofs_home/<user_name>`.
+**8.** Configure autofs to automatically mount individual users' home directories from `/export/home` on 192.168.0.16 to `/mnt/autofs_home/<user_name>`.
 
 **9.** Configure both servers to create files with 660 permissions by default.
 
@@ -59,9 +59,9 @@ dba_intern: MESSAGES
 
 **21.** Find all files larger than 3MB in the /etc directory on server1 and copy them to /largefiles.
 
-**22.** On both servers persistently mount `/export/dba_files` from the server 192.168.0.17 under `/mnt/dba_files`. Ensure manny is the user owner and dba_staff is the group owner. Ensure the groupID is applied to newly created files. Ensure users can only delete files they have created. Ensure only members of the dba_staff group can access the directory.
+**22.** On both servers persistently mount `/export/dba_files` from the server 192.168.0.16 under `/mnt/dba_files`. Ensure manny is the user owner and dba_staff is the group owner. Ensure the groupID is applied to newly created files. Ensure users can only delete files they have created. Ensure only members of the dba_staff group can access the directory.
 
-**23.** On both servers persistently mount `/export/it_files` from the server 192.168.0.17 under `/mnt/it_files`. Ensure marcia is the user owner and it_staff is the group owner. Ensure the groupID is applied to newly created files. Ensure users can only delete files they have created. Ensure only members of the it_staff group can access the directory.
+**23.** On both servers persistently mount `/export/it_files` from the server 192.168.0.16 under `/mnt/it_files`. Ensure marcia is the user owner and it_staff is the group owner. Ensure the groupID is applied to newly created files. Ensure users can only delete files they have created. Ensure only members of the it_staff group can access the directory.
 
 **24.** Create a job using `at` to write "This task was easy!" to /coolfiles/at_job.txt in 10 minutes.
 
@@ -109,6 +109,6 @@ Add quiet to the end of the GRUB_CMDLINE_LINUX line
 
 **41.** On server1, start one stress-ng process with the niceness value of 19. Adjust the niceness value of the stress process to 10. Kill the stress process.
 
-**42.** On server1, as the user `cindy`, create a container image from [http://192.168.0.17/containers/Containerfile](http://192.168.0.17/containers/Containerfile) with the tag `web_image`.
+**42.** On server1, as the user `cindy`, create a container image from [http://192.168.0.16/containers/Containerfile](http://192.168.0.16/containers/Containerfile) with the tag `web_image`.
 
 **43.** From the newly created image, deploy a container as a service with the container name `cindy_web`. The web config files should map to ~/web_files, and the local port of 8000 should be mapped to the container's port 80. Create a default page that says "Welcome to Cindy's Web Server!". The service should be enabled and the website should be accessible.
