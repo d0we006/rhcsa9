@@ -46,3 +46,9 @@ rm -fr /export/home/{cindy,jack,jan,manny,marcia,moe}/.config
 rm -fr /export/home/{cindy,jack,jan,manny,marcia,moe}/.local
 rm -fr /export/home/{cindy,jack,jan,manny,marcia,moe}/.lesshst
 ```
+
+```
+for i in nfs mountd rpc-bind; do firewall-cmd --add-service $i --permanent; done 
+firewall-cmd --reload
+```
+
