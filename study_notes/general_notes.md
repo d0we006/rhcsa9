@@ -14,7 +14,8 @@
 <1>9. Work on everything else.
 ```
 
-### reboot
-- A successful reboot allows you to verify that everything is working up to the moment you have rebooted
-- Before rebooting, remove the rhgb and quiet option from the GRUB boot loader => allows you to see what is actually happening and makes troubleshooting a lot easy
-- Should at least reboot after working on all storage-related assignments 
+1. reboot
+1.1 A successful reboot allows you to verify that everything is working up to the moment you have rebooted.
+1.12 Before rebooting, remove the rhgb and quiet option from the GRUB boot loader => allows you to see what is actually happening and makes troubleshooting a lot easy.
+1.13 Should at least reboot after working on all storage-related assignments.
+1.2 Ensure that all the tasks are implemented with firewalld and SELinux enabled. Your server should be able to survive the reboot.
