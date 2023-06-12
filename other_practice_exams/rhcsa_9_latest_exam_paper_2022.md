@@ -18,8 +18,8 @@ Gateway 192.168.0.1
 Name Server - 8.8.8.8
 
 **2.** Configure the repositories which are available on the repo server at:
-http://repo.eight.example.com/BaseOS
-http://repo.eight.example.com/AppStream
+-   [http://192.168.0.16/repo/BaseOS/](http://192.168.55.47/repo/BaseOS/)
+-   [http://192.168.0.16/repo/AppStream/](http://192.168.55.47/repo/AppStream/)
 
 **3.** Configure the Selinux:
 Your webcontent has been configured in port 85 at the /var/www/html directory (Don't alter or remove any files in this directory) make the content accessible.
