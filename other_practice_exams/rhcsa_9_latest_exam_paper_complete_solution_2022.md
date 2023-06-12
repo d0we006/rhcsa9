@@ -241,9 +241,9 @@ Backup the /var/tmp as /root/test.tar.gz
 #### **Solution to Task 11c:**
 ```
 #su - natasha
-vim .bashrc
+vim .bash_profile
 umask 277
-. .bashrc
+. .bash_profile
 ```
 
 **12.** (a) The password for all new users in system1.eight.example.com should expires after 20 days.
