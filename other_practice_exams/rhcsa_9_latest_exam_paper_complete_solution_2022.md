@@ -274,7 +274,7 @@ Assign the Sudo Privilege for Group "admin" and Group members can administrate w
 # mkdir /root/myfiles
 #vim mysearch
 #!/bin/bash
-find /usr/share-type f-size -1M -exec cp {}/root/myfiles\;
+find /usr/share -type f -size -1M -exec cp {}/root/myfiles\;
 ```
 
 **14.** Reset the forgotten root password in system2.eight.example.com machine and set it as 'redhat'
