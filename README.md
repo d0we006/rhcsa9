@@ -19,5 +19,7 @@ This area has practice task list, as well as a solution guide to the practice ta
 ### Resources / References / Acknowledgements
 A quick shoutout to everywhere I got info from:
 - https://github.com/aggressiveHiker
+- https://github.com/rdbreak/rhcsa8env
+- https://github.com/soficx/rhcsa
 - https://learning.oreilly.com/ (Sander van Vugt: Red Hat Certified System Administrator (RHCSA) RHEL 9)
 - https://youtu.be/esbhLEM4zYc
