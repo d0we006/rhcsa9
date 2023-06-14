@@ -98,7 +98,7 @@
 
 **<1>8**. Resize the LVM logical volume that contains the root file system and add 1 GiB. Perform all tasks necessary to do so.
 
-**<1>9**. Find all files that are owned by user linda and copy them to the file /tmp/lindafiles/.
+**<1>9**. Find all files that are owned by user linda and copy them to the directory /tmp/lindafiles/.
 
 **<1>10**. Create user vicky with the custom UID 2008.
 
