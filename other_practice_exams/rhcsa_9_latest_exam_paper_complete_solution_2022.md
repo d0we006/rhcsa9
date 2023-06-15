@@ -359,6 +359,7 @@ loginctl show-user paradise
 ### logged in as paradise user (fresh login => DO NOT USE 'su - paradise' => USE ssh paradise@ipaddress):
 mkdir ~/container_journal
 podman login
+### Search container packages (e.g., NAME:docker.io/lendingworks/rsyslog Description:rsyslog containers):
 podman search rsyslog
 podman search rsyslog | less
 podman run -d --name logserver -v /home/paradise/container_journal/:/var/log/journal:Z docker.io/corpusops/rsyslog
