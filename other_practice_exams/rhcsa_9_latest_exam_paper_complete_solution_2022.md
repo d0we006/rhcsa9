@@ -362,12 +362,14 @@ podman login
 ### Search container packages (e.g., NAME:docker.io/lendingworks/rsyslog Description:rsyslog containers):
 podman search rsyslog
 podman search rsyslog | less
-podman run -d --name logserver -v /home/paradise/container_journal/:/var/log/journal:Z docker.io/corpusops/rsyslog
+### Pull container
+podman pull docker.io/lendingworks/rsyslog
+podman run -d --name logserver -v /home/paradise/container_journal/:/var/log/journal:Z docker.io/lendingworks/rsyslog
 mkdir -p /home/paradise/.config/systemd/user
 cd /home/paradise/.config/systemd/user/
 podman generate systemd --name logserver --files --new
 ls -Z
-podman cat container-logserver.service
+cat container-logserver.service
 podman stop logserver
 podman rm logserver
 
