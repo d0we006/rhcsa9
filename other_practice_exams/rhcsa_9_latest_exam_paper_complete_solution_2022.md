@@ -148,8 +148,8 @@ mkdir -p /automount/public
 /automount /etc/auto.automount --timeout=30
 
 ### Edit /etc/auto.automount, and enter the following:
-public  -ro,sync        192.168.0.19:/public
-private -rw,sync        192.168.0.19:/private
+public  -ro,sync        192.168.0.19:/automount/private 
+private -rw,sync        192.168.0.19:/automount/private
 
 ### restart autofs, and check: 
 systemctl restart autofs
