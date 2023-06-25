@@ -1,5 +1,3 @@
-# RHCSA 9 Prep Repo
-This repo contains my study notes, a practice task list I used for preparing for the RHCSA 9 exam, as well as some general guidelines for how I built out my lab.
 
 ## Layout
 The site is broken into four main areas:
@@ -17,7 +15,6 @@ This area has practice task list, as well as a solution guide to the practice ta
 ---
 
 ### Resources / References / Acknowledgements
-A quick shoutout to everywhere I got info from:
 - https://github.com/aggressiveHiker
 - https://github.com/rdbreak/rhcsa8env
 - https://github.com/soficx/rhcsa
