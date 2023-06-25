@@ -3,7 +3,7 @@
 The lab consists of three servers, all RHEL 9.0 minimal installations, which consist of one repo server and two exam servers. Once setup, the repo server should be left untouched, except for running a quick permissions reset on the NFS shares when resetting the lab.
 
 Servers in my lab setup are on the following IPs:
-- Repo: 192.168.0.17
+- Repo: 192.168.0.16
 - Server1: 192.168.0.18
 - Server2: 192.168.0.19
 
